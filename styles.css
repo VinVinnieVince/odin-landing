@@ -1,8 +1,5 @@
 body {
     font-family: Roboto, sans-serif;
-    display: flex;
-    flex-flow: column;
-    padding: 0;
     margin: 0;
 }
 
@@ -14,13 +11,15 @@ body {
 }
 
 .header,
-.title {
+.title,
+.footer {
     background-color: #1F2937;
     justify-content: space-between;
     align-items: center;
 }
 
-.header h3 {
+.header *,
+.left h1 {
     font-size: 24px;
     color: #F9FAF8;
 }
@@ -33,7 +32,7 @@ body {
 
 .header ul a {
     text-decoration: none;
-    color: white;
+    font-size: 18px;
 }
 
 .title {
@@ -44,7 +43,6 @@ body {
 .left h1 {
     font-size: 48px;
     font-weight: bolder;
-    color: #F9FAF8;
 }
 
 .left p {
@@ -64,11 +62,10 @@ button {
 
 .title .picture {
     display: flex;
-    background-color: #b3b3b3;
-    flex: auto;
+    flex: initial; /* Stretching container will distort image */
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 400px;
     width: 400px;
     overflow: hidden;
     border-radius: 30px;
@@ -155,9 +152,7 @@ img {
 }
 
 .footer {
-    background-color: #1F2937;
     color: white;
     justify-content: center;
-    align-items: center;
     font-size: 80%;
 }
