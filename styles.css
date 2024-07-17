@@ -1,5 +1,5 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto, sans-serif;
     display: flex;
     flex-flow: column;
     padding: 0;
@@ -15,13 +15,14 @@ body {
 
 .header,
 .title {
-    background-color: #4d4d4d;
+    background-color: #1F2937;
     justify-content: space-between;
     align-items: center;
 }
 
-.header {
-    color: white;
+.header h3 {
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 .header ul {
@@ -40,13 +41,20 @@ body {
     gap:50px;
 }
 
-.left {
-    color: white;
-    flex: auto;
+.left h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
 }
 
-.left button {
-    background-color: #3366ff;
+.left p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button {
+    /* Note how it applies to _all_ buttons */
+    background-color: #3882f6;
     color:  white;
     padding: 10px 30px;
     border: 0;
@@ -77,6 +85,9 @@ img {
 .pic-title {
     text-align: center;
     margin: 40px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
 }
 
 .pictures {
@@ -106,11 +117,18 @@ img {
 .quote {
     flex-flow: column wrap;
     padding: 5em 27%;
-    background-color: #e6e6e6;
+    background-color: #e5e7eb;
 }
 
 .quote > * {
     margin: 0;
+}
+
+.quote h3 {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937;
 }
 
 .quote p {
@@ -128,21 +146,16 @@ img {
     border-radius: 10px;
 }
 
+.prompt button {
+    border: 2px solid white;
+}
+
 .text * {
     margin: 0;
 }
 
-.prompt button {
-    background-color: #3366ff;
-    border: 2px solid white;
-    border-radius: 5px;
-    color: white;
-    padding: 5px 20px;
-    font-weight: bold;
-}
-
 .footer {
-    background-color: #4d4d4d;
+    background-color: #1F2937;
     color: white;
     justify-content: center;
     align-items: center;
