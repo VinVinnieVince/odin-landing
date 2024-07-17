@@ -68,12 +68,12 @@ body {
     gap: 20px;
 }
 
-.picture {
+.pic-cap {
     max-width: 200px;
     text-align: center;
 }
 
-.picture img {
+.pic-cap img {
     border: 2.5px solid blue;
     border-radius: 10px;
 }
