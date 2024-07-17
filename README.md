@@ -1,5 +1,7 @@
 My attempt at the 2nd project on The Odin Project foundations course.
 
+Live site shortcut: https://vinvinnievince.github.io/odin-landing/
+
 From https://www.theodinproject.com/lessons/foundations-landing-page
 
 <strong>Image credits</strong>
