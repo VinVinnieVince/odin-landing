@@ -37,6 +37,7 @@ body {
 
 .title {
     padding: 5% 15%;
+    gap:50px;
 }
 
 .left {
@@ -53,9 +54,24 @@ body {
     font-weight: bold;
 }
 
-.title img {
+.title .picture {
+    display: flex;
     background-color: #b3b3b3;
     flex: auto;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+img {
+    /* For all images, will attempt to fill entire container, whilst maintaining aspect ratio */
+    max-height: auto;
+    max-width: auto;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .pic-title {
@@ -66,21 +82,30 @@ body {
 .pictures {
     justify-content: center;
     gap: 20px;
+    margin-bottom: 5em;
 }
 
 .pic-cap {
+    display: flex;
+    flex-flow: column;
     max-width: 200px;
     text-align: center;
+    align-items: center;
 }
 
-.picture img {
+/* Image crop test */
+.pic-cap .picture {
     border: 2.5px solid blue;
     border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 .quote {
     flex-flow: column wrap;
-    padding: 30px 27%;
+    padding: 5em 27%;
     background-color: #e6e6e6;
 }
 
